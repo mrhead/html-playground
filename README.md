@@ -1,24 +1,32 @@
-# README
+# My HTML playground
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+Clone the repository:
 
-* Ruby version
+```
+git clone git@github.com:mrhead/html-playground.git
+```
 
-* System dependencies
+Setup the application:
 
-* Configuration
+```
+cd html-playground
+./bin/setup
+```
 
-* Database creation
+Start the webserver and esbuild watch processes:
 
-* Database initialization
+```
+./bin/dev
+```
 
-* How to run the test suite
+Go to http://localhost:3000/.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Testing
 
-* Deployment instructions
+Run:
 
-* ...
+```
+rails test
+```
