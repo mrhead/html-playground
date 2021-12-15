@@ -1,0 +1,33 @@
+<body class="bg-gray-100">
+  <div class="w-96 border rounded shadow mx-auto mt-28 p-6 bg-white">
+    <h1 class="text-4xl text-bold mb-4 text-center">Sign in</h1>
+
+    <%= form_with method: :get do |form| %>
+      <%= form.hidden_field :show_error, { value: true } %>
+
+      <% if @show_error %>
+        <div class="mb-4 px-4 py-2 border rounded border-red-300 bg-red-200 text-red-900">
+          Signin failed.
+          <%= link_to "Try again", tailwind_sign_in_path, class: "underline" %>.
+        </div>
+      <% end %>
+
+      <div class="mb-4">
+        <%= form.label :email, class: "block" %>
+        <%= form.text_field :email, class: "w-full border rounded p-2" %>
+      </div>
+
+      <div class="mb-4">
+        <%= form.label :password, class: "block" %>
+        <%= form.password_field :password, class: "w-full border rounded p-2" %>
+      </div>
+
+      <div class="mb-4">
+        <%= form.check_box :remember_me %>
+        <%= form.label :remember_me, "Remember me" %>
+      </div>
+
+      <%= form.submit "Sign in", class: "w-full border rounded py-3 bg-blue-500 hover:bg-blue-600 text-white cursor-pointer" %>
+    <% end %>
+  </div>
+</body>
