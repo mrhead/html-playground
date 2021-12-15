@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   root "pages#index"
 
+  get "tailwind/blog_post"
   get "tailwind/sign_in"
 end

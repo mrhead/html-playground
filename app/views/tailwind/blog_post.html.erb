@@ -1,0 +1,9 @@
+<body>
+  <div class="my-16 px-4 max-w-screen-md mx-auto ">
+    <h1 class="text-4xl"><%= @post.title.delete_suffix(".") %></h1>
+
+    <div class="mt-8">
+      <%= simple_format(@post.content, class: "mt-4") %>
+    </div>
+  </div>
+</body>

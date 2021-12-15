@@ -5,6 +5,7 @@ gem "rails", "~> 7.0.0.rc1"
 
 gem "bootsnap", require: false
 gem "cssbundling-rails"
+gem "faker"
 gem "jbuilder"
 gem "jsbundling-rails"
 gem "puma"
