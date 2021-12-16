@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root "pages#index"
 
   get "tailwind/blog_post"
+  get "tailwind/modal"
   get "tailwind/sign_in"
 end

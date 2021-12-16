@@ -3,6 +3,9 @@ class TailwindController < ApplicationController
     @post = Post.generate
   end
 
+  def modal
+  end
+
   def sign_in
     @show_error = params[:show_error]
   end

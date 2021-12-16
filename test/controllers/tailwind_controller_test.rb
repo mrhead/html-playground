@@ -6,6 +6,11 @@ class TailwindControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get modal" do
+    get tailwind_modal_url
+    assert_response :success
+  end
+
   test "should get sign_in" do
     get tailwind_sign_in_url
     assert_response :success
