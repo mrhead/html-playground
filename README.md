@@ -15,7 +15,7 @@ cd html-playground
 ./bin/setup
 ```
 
-Start the webserver and esbuild watch processes:
+Start the webserver and assets watch processes:
 
 ```
 ./bin/dev
