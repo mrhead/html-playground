@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
-import HelloController from "./hello_controller"
+import HelloController from "./hello_controller.js"
 application.register("hello", HelloController)
+
+import RotatingColorsController from "./rotating_colors_controller.js"
+application.register("rotating-colors", RotatingColorsController)
