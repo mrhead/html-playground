@@ -7,6 +7,5 @@ class TailwindController < ApplicationController
   end
 
   def sign_in
-    @show_error = params[:show_error]
   end
 end
