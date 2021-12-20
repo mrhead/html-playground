@@ -5,6 +5,7 @@ gem "rails", "~> 7.0.0"
 
 gem "bootsnap", require: false
 gem "cssbundling-rails"
+gem "high_voltage"
 gem "jbuilder"
 gem "jsbundling-rails"
 gem "puma"

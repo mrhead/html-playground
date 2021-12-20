@@ -2,8 +2,8 @@
   <h1 class="text-4xl">HTML Playground pages</h1>
 
   <ol class="mt-8 list-decimal list-inside">
-    <% @pages.each do |page| %>
-      <li><%= link_to page[:name], page[:path], class: "underline" %></li>
+    <% @pages.each do |page_id| %>
+      <li><%= link_to page_id.humanize, page_path(page_id), class: "underline" %></li>
     <% end %>
   </ul>
 </body>
