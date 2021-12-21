@@ -8,7 +8,7 @@
       <% if params[:show_error] %>
         <div class="mb-4 px-4 py-2 border rounded border-red-300 bg-red-200 text-red-900">
           Signin failed.
-          <%= link_to "Try again", tailwind_sign_in_path, class: "underline" %>.
+          <%= link_to "Try again", page_path("sign_in"), class: "underline" %>.
         </div>
       <% end %>
 
