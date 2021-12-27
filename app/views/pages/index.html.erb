@@ -3,7 +3,7 @@
 
   <ol class="mt-8 list-decimal list-inside">
     <% @pages.each do |page_id| %>
-      <li><%= link_to page_id.humanize, page_path(page_id), class: "underline" %></li>
+      <li><%= link_to page_id.titleize, page_path(page_id), class: "underline" %></li>
     <% end %>
   </ul>
 </body>
